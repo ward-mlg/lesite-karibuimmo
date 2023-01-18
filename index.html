@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+   <title class="logo">Karibu Immo DRC</title>
+  </head>
+  <body>
+    <nav class="cc-navbar navbar navbar-expand-lg position-fixed navbar-dark w-100">
+      <div class="container-fluid">
+        <img class="brand" src="./assets/img/vrailogo.jpg" alt="image" width="100px" height="90px" />
+        <a class="navbar-brand fw-bolder mx-4 py-3" href="#"><span>K</span>aribu <span class="span2">I</span>mmo <span class="span3">D</span>RC</a>
+        <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class=menutoggle onclick="toggleMenu();"></div>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item pe-4">
+              <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            </li>
+            <li class="nav-item pe-4">
+              <a class="nav-link" href="#apropo" onclick="toggleMenu();">A propos</a>
+            </li>
+            <li class="nav-item pe-4">
+              <a class="nav-link" href="#vente" onclick="toggleMenu();">Vente</a></li>
+            <li class="nav-item pe-4">
+              <a class="nav-link" href="#location" onclick="toggleMenu();">Location</a></li>
+            <li class="nav-item pe-4">
+              <a class="nav-link" href="#menu" onclick="toggleMenu();">Nos services</a></li>
+            <li class="nav-item pe-4">
+              <a class="nav-link" href="#noclients" onclick="toggleMenu();">Commentaires</a></li>
+            <li class="nav-item pe-4">
+              <a class="nav-link" href="#contact" onclick="toggleMenu();">Contact</a></li>
+
+            <li class="nav-item pe-4">
+              <a class="btn btn-order rounded-10" href="#contact" onclick="toggleMenu();">Passer la commande</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="banner d-flex justify-content-center align-items-center pt-5">
+      <div class="container my-5 py-5">
+        <div class="row">
+          <div class="card bg-dark text-white">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/img/plombimage.PNG" class="d-block w-80" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/elctriimage.PNG" class="d-block w-80" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/logo kri.jpg" class="d-block w-80" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="available merriweather py-5" id="apropo">
+      <div class="container">
+        <div>
+          <h2 class="titre-texte"><span>Q</span>ui sommes nous?</h2>
+          <div>
+        <div class="row">
+          <div class="card mb-3 border-4 rounded-4">
+            <div class="row">
+              <div class="col-md-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./assets/img/tophapropo2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/img/aprpo22.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/img/aprpo33.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quasi ullam vel at et iure molestias, facilis eveniet harum id, perspiciatis autem quaerat dolores. Culpa quasi odio cumque autem voluptas.
+                  Ratione quisquam tenetur quis vero quos. Adipisci itaque fugiat ratione obcaecati odio inventore architecto, quae incidunt molestias perferendis est, vitae soluta voluptatibus quia repellendus voluptatem laborum at, iste quasi mollitia?
+                  Illo quae facere quibusdam. Molestias, vero officia. Blanditiis delectus cumque quia. Odio labore omnis dolorem! Eos dignissimos quasi non dolorem, laudantium velit eius repudiandae quam sit iure officiis vero exercitationem!
+                  Distinctio vero quisquam aliquam autem nihil recusandae possimus, voluptas, excepturi earum nobis mollitia, repellendus cumque tempore nulla! Ipsam, quod veniam labore officiis doloremque quidem id dolores sit, doloribus corrupti laudantium!
+                  Atque enim molestias ipsa maxime qui tempora asperiores placeat dolores molestiae, ab animi error! Dicta quas officia iusto quod, eum voluptate tenetur consequuntur natus doloremque exercitationem mollitia, nulla fuga fugit.
+                  Esse, ipsum, non distinctio minus laboriosam voluptatum, officiis perspiciatis facilis dolor autem blanditiis harum quis. Natus quam voluptates repudiandae nostrum laboriosam, veniam aperiam, sunt modi totam quibusdam molestias eveniet minima.
+                  Perferendis voluptate deleniti itaque consequuntur tenetur architecto sunt qui! Ducimus, mollitia quidem? Mollitia, odit. Consequuntur suscipit qui sapiente ducimus, eligendi quos mollitia officia esse accusantium labore, asperiores dicta reiciendis ratione?
+                  Eaque dignissimos earum distinctio, rem reiciendis facilis fugiat facere atque ipsum dolorum iure cumque accusamus in, ab non. Magni rem ad voluptatem dolor ab labore vero libero. Doloribus, corporis impedit?
+                  Nihil, delectus rem dolorem qui praesentium tenetur laboriosam minima unde officia omnis illum provident quo mollitia, exercitationem consectetur blanditiis veritatis soluta error sequi. Neque qui voluptate suscipit. Nam, ut officia.
+                  Nobis, totam? Voluptas suscipit minus corrupti a recusandae voluptatem nostrum quisquam ab iste dignissimos laudantium impedit, perferendis eaque sequi nobis id modi exercitationem facilis, maxime molestias nemo. Quo, aliquid architecto!
+                  Harum sit expedita assumenda neque! Impedit repellat saepe laudantium nam assumenda nulla amet inventore hic aspernatur corrupti, animi ratione suscipit, rerum consequatur et iure dignissimos vero quaerat magnam sint. Ipsam?
+                  Deserunt cupiditate qui omnis officiis, quasi eos nesciunt incidunt. Ab sit non impedit corrupti? Facere repellendus amet at totam ad, deserunt doloribus natus delectus, animi quisquam iste consectetur. Numquam, nam.
+                  In tempora quaerat impedit nulla aspernatur, dicta dolor qui provident recusandae pariatur ad, mollitia fugit velit minus nostrum consectetur minima aperiam assumenda, optio obcaecati. Repudiandae optio quae quod dicta exercitationem?
+                  Exercitationem dicta, esse quod porro sed, ut rem quibusdam reiciendis voluptatum sit minima. Harum itaque, cupiditate corrupti deserunt sequi eligendi sed, fuga rem earum optio laboriosam aspernatur ipsa dolorum error!
+                  Similique voluptatem temporibus, sint ex velit quod soluta labore nihil sunt unde corporis est saepe ipsum, ducimus cum blanditiis. Impedit ex magni tempora temporibus minus? Tempore delectus sequi consequuntur unde!
+                  Est sint impedit aliquam possimus quisquam provident odit dolores. Sapiente numquam excepturi eum sit odio delectus quis illum minima nihil in a error, repellat explicabo ut molestiae facere porro? Officia.
+                  Hic, ipsum optio sunt dolores dolor autem eaque est consequuntur! Nemo architecto sunt earum animi quis fugit libero accusantium, assumenda perspiciatis consequuntur tempora molestiae soluta quae magnam. Minima, laborum nihil!
+                  Minus vitae aliquid quisquam, ex aliquam deserunt distinctio labore exercitationem, perspiciatis magnam iusto atque nihil velit et! Ea quo veritatis, quae veniam voluptatibus quidem dignissimos eveniet assumenda dolorem odio. Voluptates.
+                  Sed consectetur sunt porro itaque consequuntur, placeat cumque nam aliquam nesciunt, perspiciatis sint repudiandae earum, quae omnis aperiam totam illum ipsum. Numquam tempore eius harum eos animi natus odio? Impedit!
+                  Ipsum voluptate aut praesentium nostrum dicta excepturi, veritatis ullam illo dignissimos saepe at dolores ducimus maxime laboriosam unde tempora, necessitatibus a ex architecto earum distinctio. Beatae praesentium aperiam fuga quis.</p>
+                  <p class="card-text"><a href="#" class="text-muted btn">Last updated 3 mins ago</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="vente merriweather py-5" id="vente">
+      <div class="container">
+        <div>
+          <h2 class="titre-texte"><span>L</span>a vente</h2>
+          <div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/img/house1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/house2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/house3.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="location merriweather py-5" id="location">
+      <div class="container">
+        <div>
+          <h2 class="titre-texte"><span>L</span>a location</h2>
+          <div>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="./assets/img/house1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="./assets/img/house2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/house3.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="titre">
+          <h2 class="titre-texte"><span>N</span>os services</h2>
+          <p>Vous trouverez ici nos differents services</p>
+       </div>
+       <div class="contenu">
+          <div class="box">
+          <div class="imbox">
+              <img src="./images/location et vente.jpg" alt="image">
+          </div>
+          <div class="text">
+              <h3>Vente</h3>
+          </div>
+          </div>
+          <div class="box">
+              <div class="imbox">
+                  <img src="./images/location et vente.jpg" alt="image">
+              </div>
+              <div class="text">
+                  <h3>Location</h3>
+              </div>
+              </div>
+              <div class="box">
+                  <div class="imbox">
+                      <img src="./assets/img/vraiplombimage.PNG" alt="image">
+                  </div>
+                  <div class="text">
+                      <h3>Plomberie</h3>
+                  </div>
+                  </div>
+                  <div class="box">
+                      <div class="imbox">
+                          <img src="./assets/img/elctriimage.PNG" alt="image">
+                      </div>
+                      <div class="text">
+                          <h3>Electricite</h3>
+                      </div>
+                      </div>
+                      <div class="box">
+                          <div class="imbox">
+                              <img src="./images/Screenshot_20221221-135355~2.jpg" alt="image">
+                          </div>
+                      <div class="text">
+                       <h3>Menagement</h3>
+                      </div>
+                  </div>
+              </div>
+          </div>
+                  <div class="titre">
+                  <a href="#" class="btn1">Aller plus loin</a>
+          </div>  
+     </section>
+
+     <section class="noclients" id="noclients">
+      <div class="titre">
+          <h2 class="titre-texte"><span>Q</span>ue disent nos clients</h2>
+          <p>Messages de nos clients</p>
+       </div>
+       <div class="contenu">
+          <div class="box">
+          <div class="imbox">
+              <img src="./assets/img/drake.PNG" alt="image">
+          </div>
+          <div class="text">
+              <p>La fois derniere tu etais bien servi</p>
+              <h3>DRAKE</h3>
+          </div>
+          </div>
+          <div class="box">
+              <div class="imbox">
+                  <img src="./assets/img/chancelle.PNG" alt="image">
+              </div>
+              <div class="text">
+                  <p>La fois derniere tu etais bien servi</p>
+                  <h3>Chancelle MBEMBA</h3>
+              </div>
+              </div>
+              <div class="box">
+                  <div class="imbox">
+                      <img src="./assets/img/naomie.PNG" alt="image">
+                  </div>
+                  <div class="text">
+                      <p>La fois derniere tu etais bien servi</p>
+                      <h3>Mme Naomie</h3>
+                  </div>
+                  </div>
+  
+                  <div class="box">
+                      <div class="imbox">
+                          <img src="./assets/img/tresor.PNG" alt="image">
+                      </div>
+                      <div class="text">
+                          <p>La fois derniere tu etais bien servi</p>
+                          <h3> Tresor MPUTU</h3>
+                      </div>
+                      </div>
+  
+                  <div class="box">
+                      <div class="imbox">
+                          <img src="./assets/img/marcello.PNG" alt="image">
+                      </div>
+                      <div class="text">
+                          <p>La fois derniere tu etais bien servi</p>
+                          <h3>Pasteur Marcello</h3>
+                      </div>
+                      </div>
+                      <div class="box">
+                          <div class="imbox">
+                              <img src="./assets/img/matata.PNG" alt="image">
+                          </div>
+                      <div class="text">
+                      <p>Je trouve que cette entreprise a des grandes embitions</p>
+                       <h3>M. Matata Mponyo</h3>
+                      </div>
+                  </div>
+              </div>
+     </section> 
+     <section class="order-form-py-5 text-light" id="contact">
+      <div class="container">
+        <h2 class="merriweather text-center text-muted mb-4">Passer une commande</h2>
+        <form>
+          <div class="row">
+            <div class="col-md-6 col-5m">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                <input type="text" class="form-control" placeholder="Votre nom" />
+              </div>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01"><i class="fas fa-utesils"></i></label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Choisir une maison</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01"><i class="fas fa-sort-numeric-up-alt"></i></label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Donner le delai</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6 col-5m">
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Votre email" />
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-at"></i></span>
+              </div>
+              <div class="input-group mb-3">
+                <input type="number" class="form-control" placeholder="Numero de telephone" />
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-phone"></i></span>
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Adresse physique Ex:. Nyota 45" />
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-home"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user">Preciser le delai</i></span>
+                <input type="text" class="form-control" placeholder="Ex:. Dans 3h" />
+              </div>
+              <div class="input-group">
+                <span class="input-group-text">Autres informations</span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+              </div>
+          </div>
+        </form>
+      </div>
+     </section>
+     <div class="Copyright">
+      <p>Copyright 2022 <a href="#">pym </a>Karibi Immo DRC site Web</p>
+     </div>  
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+          window.addEventListener('scroll', function(){
+            const header =document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+          });
+
+          function toggleMenu(){
+            const toggleMenu = document.querySelector('.menutoggle');
+            const navbar = document.querySelector('navbar');
+            menutoggle.classList.toggle('active');
+            navbar.classList.toggle('active');
+          }
+
+        </script>
+  </body>
+</html>
